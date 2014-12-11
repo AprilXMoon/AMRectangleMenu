@@ -1,0 +1,4 @@
+AMRectangleMenu
+===============
+
+Dynamic menu
