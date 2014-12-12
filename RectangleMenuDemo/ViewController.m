@@ -42,7 +42,7 @@
 
 -(void)setImageArray
 {
-    ImageArr = @[@"bluebutton.png",@"bluebutton.png",@"bluebutton.png",@"bluebutton.png",@"bluebutton.png",@"bluebutton.png",];
+    ImageArr = @[@"OrangeBtn",@"GreenBtn",@"OrangeBtn",@"GreenBtn",@"BlueBtn"];
 }
 
 
@@ -67,21 +67,21 @@
 {
     self.rectangleMenu = [[AMRectangleMenu alloc]init];
     self.rectangleMenu.menuItemsArray = [self createMenuItems];
-    self.rectangleMenu.menuImage = [UIImage imageNamed:@"bluebutton.png"];
-    [self.rectangleMenu setFrame:CGRectMake(15, 100, 48, 40)];
+    self.rectangleMenu.menuImage = [UIImage imageNamed:@"BlueBtn"];
+    [self.rectangleMenu setFrame:CGRectMake(15, 100, 60, 48)];
     self.rectangleMenu.delegate = self;
 }
 
 -(void)setVerticalMenu
 {
     self.rectangleMenu.OffsetX = 20;
-    self.rectangleMenu.OffsetY = -5;
+    self.rectangleMenu.OffsetY = 5;
     self.rectangleMenu.itemOriendtaionType = AMExpandedVertical;
 }
 
 -(void)setHorizontalMenu
 {
-    self.rectangleMenu.OffsetX = -3;
+    self.rectangleMenu.OffsetX = 3;
     self.rectangleMenu.OffsetY = 15;
     self.rectangleMenu.itemOriendtaionType = AMExpandedHorizontal;
 }
@@ -91,7 +91,7 @@
 {
     if (self.rectangleMenu.isOpened) {
         self.rectangleMenu.isOpened = NO;
-        [self.rectangleMenu setFrame:CGRectMake(15, 100, 48, 40)];
+        [self.rectangleMenu setFrame:CGRectMake(15, 100, 60, 48)];
 
     }
     
@@ -105,7 +105,7 @@
 {
     if (self.rectangleMenu.isOpened) {
         self.rectangleMenu.isOpened = NO;
-        [self.rectangleMenu setFrame:CGRectMake(15, 100, 48, 40)];
+        [self.rectangleMenu setFrame:CGRectMake(15, 100, 60, 48)];
     }
     
     [self.rectangleMenu resetParamers];
